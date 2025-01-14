@@ -27,26 +27,47 @@
 Список открытых портов и сетевых служб:
 
 21/tcp: ftp — vsftpd 2.3.4
+
 22/tcp: ssh — OpenSSH 4.7p1 Debian 8ubuntu1
+
 23/tcp: telnet — Linux telnetd
+
 25/tcp: smtp — Postfix smtpd
+
 53/tcp: domain — DNS-сервер
+
 80/tcp: http — Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+
 111/tcp: rpcbind — 2 (RPC #100000)
+
 139/tcp: netbios-ssn — Samba smbd 3.X (WORKGROUP)
+
 445/tcp: netbios-ssn — Samba smbd 3.X (WORKGROUP)
+
 512/tcp: exec — Remote execution
+
 513/tcp: login — Rlogin
+
 514/tcp: tcpwrapped — Port closed by firewall
+
 1524/tcp: ingreslock — Зачастую используется в тестах безопасности
+
 2049/tcp: nfs — Network File System
+
 2121/tcp: ftp — ProFTPD 1.3.1
+
 3306/tcp: mysql — MySQL 5.0.51a-3ubuntu5
+
 3632/tcp: distccd — Distributed compiler daemon v1 (GNU)
+
 5432/tcp: postgresql — PostgreSQL DB
+
 5900/tcp: vnc — VNC (protocol 3.3)
+
 6000/tcp: X11 — Доступ к X11 (заблокирован: "access denied")
+
 6667/tcp: irc — Unreal IRC Daemon
+
 8009/tcp: ajp13 — Apache JServ Protocol (AJP13)
 
 Уязвимости:
@@ -96,3 +117,11 @@ SYN	         SYN и SYN-ACK/RST	   Полуоткрытые ответы
 FIN	              FIN	            Тишина или RST
 Xmas	         FIN, PSH, URG	      Тишина или RST
 UDP	              UDP	            Тишина или ICMP
+
+| Тип сканирования | Трафик            |  Ответ сервера      |
+|------------------|-------------------|---------------------|
+| SYN              | SYN и SYN-ACK/RST | Полуоткрытые ответы |
+| FIN              |        FIN        |  Тишина или RST     |
+| Xmas             |   FIN, PSH, URG	|  Тишина или RST     |
+| UDP	             |        UDP        |  Тишина или ICMP    |
+
