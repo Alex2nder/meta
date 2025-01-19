@@ -79,6 +79,14 @@ CVE-2008-1657 — уязвимость в OpenSSH 4.7p1. https://www.exploit-db.
 CVE-2010-4221 — уязвимость в ProFTPD 1.3.1. https://www.exploit-db.com/exploits/15356
 
 ### Задание 2
+SYN
+![1](img/syn.png)
+FIN
+![2](img/fin.png)
+XMAS
+![3](img/xmas.png)
+UPD
+![4](img/udp.png)
 
 SYN-сканирование
 Nmap отправляет пакет с флагом SYN (инициализация TCP-сессии). Если порт открыт, сервер отвечает пакетом SYN-ACK. Если порт закрыт, сервер отвечает пакетом RST.
